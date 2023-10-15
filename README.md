@@ -1,6 +1,6 @@
 # Orange Pi 5, B, & Plus CCminer
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
-1. Clone repo & enter dir with:
+1. Clone repo & enter directory with:
 ```
 git clone https://github.com/Darktron/piccminer.git
 cd piccminer
