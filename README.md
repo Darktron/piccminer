@@ -18,7 +18,7 @@ git clone https://github.com/Darktron/piccminer.git && cd ~/piccminer
 
 2. Make executable & run installer with:
 ```
-chmod +x install.sh && sudo ./install.sh
+chmod +x install.sh && ./install.sh
 ```
 
 3. Change your pools, address, and miner name with:
