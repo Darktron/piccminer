@@ -2,7 +2,7 @@
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
 1. Run installer with:
 ```
-curl -o- -k https://github.com/Darktron/piccminer/raw/main/install.sh | bash
+curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash
 ```
 
 2. Change your pools, address, and miner name with:
