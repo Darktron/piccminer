@@ -1,5 +1,16 @@
 # Orange Pi 5, B, & Plus
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
+
+This is an installation script integrated with optimized ccminer for cortex-a76 & cortex-a55 compiled in clang 18.
+
+This script has been tested to work in `Orangepi5b_1.0.2_ubuntu_jammy_server_linux5.10.110.img` firmware.
+
+Here is a list of features done by the installation script:
+- Installs ccminer and dependencies.
+- Makes a "oc.sh & oc.service" for easy overclocking on boot.
+- Makes the ccminer start on boot via crontab.
+- Lastly integrates a modified kernel file for a slight overvoltage (ONLY Orange Pi 5B Model).
+
 1. Run installer with:
 ```
 curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash && cd ~/piccminer
@@ -9,6 +20,8 @@ curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh
 ```
 nano config.json
 ```
+
+**At this point I highly recommend a reboot: `reboot`**
 
 3. Start miner with:
 ```
@@ -25,7 +38,7 @@ screen -x ccminer
 CTRL-a then d
 ```
 
-6. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to flash OS:
+6. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
 ```
 sudo orangepi-config
 ```
