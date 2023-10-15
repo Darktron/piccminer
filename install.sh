@@ -13,12 +13,12 @@ sudo mv oc.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start oc.service
 sudo systemctl enable oc.service
-echo -e "Overclock added to boot list!!!"
+echo -e "Overclock added to boot list!!!\n"
 export VISUAL=nano
 export EDITOR=nano
 if crontab -l 2>/dev/null | grep -q "@reboot sleep 10 && ~/piccminer/start.sh"
 then
-    echo -e "CCMiner is not in boot list..."
+    echo -e "CCMiner is not in boot list...\n"
 else
     (crontab -l 2>/dev/null ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
     echo "CCMiner added to boot list!!!"
