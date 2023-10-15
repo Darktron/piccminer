@@ -20,7 +20,6 @@ export EDITOR=nano
 if crontab -l 2>/dev/null | grep -q "@reboot sleep 10 && ~/piccminer/start.sh"; then
     echo "CCMiner is not in boot list"
 else
-    # Add the cron job
     (crontab -l 2>/dev/null ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
     echo "CCMiner added on boot list!"
 fi
