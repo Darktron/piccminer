@@ -8,7 +8,7 @@ rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 git clone https://github.com/Darktron/piccminer.git
 cd ~/piccminer
 chmod +x oc.sh ccminer start.sh install.sh
-chmod 755 mod5b.dtb
+chmod 777 mod5b.dtb
 sudo mv mod5b.dtb /boot/dtb/rockchip/
 sudo mv oc.service /etc/systemd/system/
 sudo systemctl daemon-reload
@@ -20,4 +20,3 @@ if ! crontab -l | grep -q "@reboot sleep 10 && ~/piccminer/start.sh";
 then
     (crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
 fi
-cd ~/piccminer
