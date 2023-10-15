@@ -11,40 +11,45 @@ Here is a list of features done by the installation script:
 - Makes the ccminer start on boot via crontab.
 - Lastly integrates a modified kernel file for a slight overvoltage (ONLY Orange Pi 5B Model).
 
-1. Run installer with:
+1. Clone repo with:
 ```
-sudo curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | sudo bash
+git clone https://github.com/Darktron/piccminer.git && cd ~/piccminer
 ```
 
-2. Change your pools, address, and miner name with:
+2. Make executable & run installer with:
+```
+chmod +x install.sh && sudo ./install.sh
+```
+
+3. Change your pools, address, and miner name with:
 ```
 nano config.json
 ```
 
 **At this point I highly recommend a reboot: `reboot`**
 
-3. Start miner with:
+4. Start miner with:
 ```
 ~/piccminer/start.sh
 ```
 
-4. View miner with:
+5. View miner with:
 ```
 screen -x ccminer
 ```
 
-5. Detach miner with:
+6. Detach miner with:
 ```
 CTRL-a then d
 ```
 
-6. Optional edit overclock with:
+7. Optional edit overclock with:
 ```
 nano ~/piccminer/oc.sh
 ```
 - Perform a reboot after editing overclock with: `reboot`
 
-7. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
+8. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
 ```
 sudo orangepi-config
 ```
