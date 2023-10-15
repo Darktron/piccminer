@@ -6,7 +6,7 @@ This is an installation script integrated with optimized ccminer for cortex-a76 
 This script has been tested to work in `Orangepi5b_1.0.2_ubuntu_jammy_server_linux5.10.110.img` firmware.
 
 Here is a list of features done by the installation script:
-- Installs ccminer and dependencies.
+- Install ccminer and dependencies.
 - Makes a "oc.sh & oc.service" for easy overclocking on boot.
 - Makes the ccminer start on boot via crontab.
 - Lastly integrates a modified kernel file for a slight overvoltage (ONLY Orange Pi 5B Model).
