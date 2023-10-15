@@ -4,7 +4,7 @@ sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git scree
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
-cd ~/ccminer
+cd ~/piccminer
 chmod +x oc.sh ccminer start.sh
 chmod 755 mod5b.dtb
 mv mod5b.dtb /boot/dtb/rockchip/
