@@ -11,3 +11,6 @@ sudo mv ~/piccminer/oc.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start oc.service
 sudo systemctl enable oc.service
+export VISUAL=nano
+export EDITOR=nano
+(crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
