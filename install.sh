@@ -1,5 +1,6 @@
 #!/bin/sh
-sudo apt-get -y update && apt-get -y upgrade
+sudo apt-get -y update 
+sudo apt-get -y upgrade
 sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git screen nano jq wget
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
@@ -21,6 +22,7 @@ sudo systemctl start oc.service
 sudo systemctl enable oc.service
 export VISUAL=nano
 export EDITOR=nano
-if ! crontab -l | grep -q "@reboot sleep 10 && ~/piccminer/start.sh"; then
+if ! crontab -l | grep -q "@reboot sleep 10 && ~/piccminer/start.sh"; 
+then
     (crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
 fi
