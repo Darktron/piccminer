@@ -1,4 +1,4 @@
-# Orange Pi 5, B, & Plus CCminer
+# Orange Pi 5, B, & Plus
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
 1. Run installer with:
 ```
@@ -29,13 +29,6 @@ CTRL-a then d
 ```
 sudo orangepi-config
 ```
-From here we go to System > Bootenv
-in this list he need to modify fdtfile to:
-``` 
-fdtfile=rockchip/mod5b.dtb
-```
-then Save > Back > Exit
-Now perform a reboot by:
-``` 
-reboot
-```
+From here we go to `System > Bootenv` in this list he need to modify fdtfile to: `fdtfile=rockchip/mod5b.dtb`
+
+Then `Save > Back > Exit` now perform a reboot with: `reboot`
