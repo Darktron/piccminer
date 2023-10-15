@@ -1,5 +1,5 @@
 # Orange Pi 5, B, & Plus
-CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
+CCminer on Orange Pi 5, 5B, & Plus with Overclock and tweaks.
 
 This is an installation script integrated with optimized ccminer for cortex-a76 & cortex-a55 compiled in clang 18.
 
