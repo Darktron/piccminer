@@ -13,8 +13,7 @@ Here is a list of features done by the installation script:
 
 1. Run installer with:
 ```
-curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash
-cd ~/piccminer
+sudo curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash && cd ~/piccminer
 ```
 
 2. Change your pools, address, and miner name with:
