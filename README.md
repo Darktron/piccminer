@@ -38,10 +38,16 @@ screen -x ccminer
 CTRL-a then d
 ```
 
-6. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
+6. Optional edit overclock with:
+```
+nano ~/piccminer/oc.sh
+```
+- Perform a reboot after editing overclock with: `reboot`
+
+8. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
 ```
 sudo orangepi-config
 ```
-From here we go to `System > Bootenv` in this list he need to modify fdtfile to: `fdtfile=rockchip/mod5b.dtb`
+- From here we go to `System > Bootenv` in this list he need to modify fdtfile to: `fdtfile=rockchip/mod5b.dtb`
 
-Then `Save > Back > Exit` now perform a reboot with: `reboot`
+- Then `Save > Back > Exit` now perform a reboot with: `reboot`
