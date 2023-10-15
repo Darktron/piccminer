@@ -1,6 +1,6 @@
 # Orange Pi 5, B, & Plus CCminer
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
-1. Clone repo and enter dir with:
+1. Clone repo & enter dir with:
 ```
 git clone https://github.com/Darktron/piccminer.git
 cd piccminer
@@ -36,7 +36,7 @@ Ctrl+a then d
 sudo orangepi-config
 ```
 From here we go to System > Bootenv
-in this list he need to modify to:
+in this list he need to modify fdtfile to:
 ``` 
 fdtfile=rockchip/mod5b.dtb
 ```
