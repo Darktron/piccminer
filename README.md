@@ -16,16 +16,26 @@ sudo ./install.sh
 nano config.json
 ```
 
-4. Start miner.
+4. Start miner with:
 ```
 ~/piccminer/start.sh
 ```
 
-5. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to flash OS:
+5. View miner with:
+```
+screen -x ccminer
+```
+
+6. Detach miner with:
+```
+Ctrl+a then d
+```
+
+7. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to flash OS:
 ```
 sudo orangepi-config
 ```
 From here we go to System > Bootenv
-in this list he need to modify to `fdtfile=rockchip/mod5b.dtb`
+in this list he need to modify to ``` fdtfile=rockchip/mod5b.dtb ```
 then Save > Back > Exit
 Now perform a reboot by ``` reboot ```
