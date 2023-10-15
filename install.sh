@@ -5,11 +5,11 @@ sudo apt install libcurl4-openssl-dev libjansson-dev libomp-dev git screen nano 
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
-chmod +x oc.sh ccminer start.sh
-chmod 755 mod5b.dtb
-sudo chown root:root mod5b.dtb
-sudo mv mod5b.dtb /boot/dtb/rockchip/
-sudo mv oc.service /etc/systemd/system/
+chmod +x ~/piccminer/oc.sh ~/piccminer/ccminer ~/piccminer/start.sh
+chmod 755 ~/piccminer/mod5b.dtb
+sudo chown root:root ~/piccminer/mod5b.dtb
+sudo mv ~/piccminer/mod5b.dtb /boot/dtb/rockchip/
+sudo mv ~/piccminer/oc.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start oc.service
 sudo systemctl enable oc.service
