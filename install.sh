@@ -21,4 +21,6 @@ sudo systemctl start oc.service
 sudo systemctl enable oc.service
 export VISUAL=nano
 export EDITOR=nano
-(crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
+if ! crontab -l | grep -q "@reboot sleep 10 && ~/piccminer/start.sh"; then
+    (crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
+fi
