@@ -36,6 +36,12 @@ Ctrl+a then d
 sudo orangepi-config
 ```
 From here we go to System > Bootenv
-in this list he need to modify to ``` fdtfile=rockchip/mod5b.dtb ```
+in this list he need to modify to:
+``` 
+fdtfile=rockchip/mod5b.dtb
+```
 then Save > Back > Exit
-Now perform a reboot by ``` reboot ```
+Now perform a reboot by:
+``` 
+reboot
+```
