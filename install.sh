@@ -8,8 +8,8 @@ git clone https://github.com/Darktron/piccminer.git
 cd ~/piccminer
 chmod +x oc.sh ccminer start.sh
 chmod 755 mod5b.dtb
-mv mod5b.dtb /boot/dtb/rockchip/
-mv oc.service /etc/systemd/system/
+sudo mv mod5b.dtb /boot/dtb/rockchip/
+sudo mv oc.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl start oc.service
 sudo systemctl enable oc.service
