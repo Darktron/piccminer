@@ -1,5 +1,5 @@
 # Orange Pi 5, B, & Plus
-CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
+CCminer on Orange Pi 5, 5B, & Plus with Overclock and tweaks.
 
 This is an installation script integrated with optimized ccminer for cortex-a76 & cortex-a55 compiled in clang 18.
 
@@ -13,7 +13,7 @@ Here is a list of features done by the installation script:
 
 1. Run installer with:
 ```
-curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash && cd ~/piccminer
+curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash
 ```
 
 2. Change your pools, address, and miner name with:
@@ -44,7 +44,7 @@ nano ~/piccminer/oc.sh
 ```
 - Perform a reboot after editing overclock with: `reboot`
 
-8. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
+7. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to reflash OS:
 ```
 sudo orangepi-config
 ```
