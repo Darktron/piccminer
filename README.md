@@ -1,37 +1,31 @@
 # Orange Pi 5, B, & Plus CCminer
 CCminer on Orange Pi 5, 5B, &amp; Plus with Overclock and tweaks.
-1. Clone repo & enter directory with:
+1. Run installer with:
 ```
-git clone https://github.com/Darktron/piccminer.git
-cd piccminer
-```
-
-2. Run installer with:
-```
-sudo ./install.sh
+curl -o- -k https://raw.githubusercontent.com/Darktron/piccminer/main/install.sh | bash
 ```
 
-3. Change your pools, address, and miner name with:
+2. Change your pools, address, and miner name with:
 ```
 nano config.json
 ```
 
-4. Start miner with:
+3. Start miner with:
 ```
 ~/piccminer/start.sh
 ```
 
-5. View miner with:
+4. View miner with:
 ```
 screen -x ccminer
 ```
 
-6. Detach miner with:
+5. Detach miner with:
 ```
-Ctrl+a then d
+CTRL-a then d
 ```
 
-7. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to flash OS:
+6. Optional (ONLY Orange Pi 5B Model) can brick the SBC and will need to flash OS:
 ```
 sudo orangepi-config
 ```
