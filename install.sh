@@ -20,3 +20,4 @@ if ! crontab -l | grep -q "@reboot sleep 10 && ~/piccminer/start.sh";
 then
     (crontab -l ; echo "@reboot sleep 10 && ~/piccminer/start.sh") | crontab -
 fi
+cd ~/piccminer
