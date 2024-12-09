@@ -3,7 +3,7 @@ Description=Set CPU Frequency and Governor at Boot
 
 [Service]
 Type=oneshot
-ExecStart=/home/orangepi/piccminer/oc.sh
+ExecStart=$HOME/piccminer/oc.sh
 
 [Install]
 WantedBy=multi-user.target
